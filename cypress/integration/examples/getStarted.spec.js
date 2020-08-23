@@ -11,9 +11,8 @@ describe('GetStarted and Contact Us', function() {
             expect(loc.pathname).to.eq('/get-in-touch/')
             })
 
-      cy.get('.header-cta-nav').as('contactUs')   
+      cy.get('button[type=submit]').as('contactUs')
       cy.get('@contactUs')
-        .should('have.attr', 'href', '/get-in-touch') 
         .should('be.visible')
         .should('contain', 'Contact Us') 
     })
