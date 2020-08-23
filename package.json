@@ -1,0 +1,21 @@
+{
+  "name": "liveintent",
+  "version": "1.0.0",
+  "description": "liveintent qa challange",
+  "main": "index.js",
+  "dependencies": {
+    "cypress": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "node_modules\\.bin\\cypress  run",
+    "liveintent": "npm run test -- --headed",
+    "cypress": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "liveintent"
+  },
+  "author": "Ketan Patel",
+  "license": "ISC"
+}

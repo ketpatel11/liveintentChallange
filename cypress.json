@@ -1,0 +1,10 @@
+{
+    "watchForFileChanges": false,
+    "chromeWebSecurity": false,
+    "baseUrl": "https://www.liveintent.com",
+    "viewportWidth": 1280,
+    "viewportHeight": 800,
+    "retries": 1
+
+}
+
