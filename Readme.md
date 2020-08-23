@@ -1,7 +1,7 @@
 Steps to pull Repo and run the test with Cypress
 
 ## clone this repo to a local directory
-git clone https://github.com/ketpatel11/liveintent.git
+git clone https://github.com/ketpatel11/liveintentChallange.git
 
 ## cd into the cloned repo
 cd liveintent folder
