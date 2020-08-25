@@ -14,7 +14,7 @@ describe('GetStarted and Contact Us', function () {
     cy.location().should((loc) => {
       expect(loc.pathname).to.eq('/get-in-touch/');
     });
-    //Alias Contact US Button
+    // Alias Contact US Button
     cy.get('button[type=submit]').as('contactUs');
     // Verify the presence of "contact Us" Button
     cy.get('@contactUs').should('be.visible').should('contain', 'Contact Us');
