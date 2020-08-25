@@ -1,6 +1,5 @@
-describe('GetStarted and Contact Us', function() {
-     
-  it('Verify Get Started button, Url and Contact Us Button', function() {
+describe('GetStarted and Contact Us', function () {
+  it('Verify Get Started button, Url and Contact Us Button', function () {
     // go to home page
     cy.visit('/');
     // Alias getStarted Button
@@ -9,17 +8,14 @@ describe('GetStarted and Contact Us', function() {
     cy.get('@getStartedButton')
       .should('have.attr', 'href', '/get-in-touch/')
       .should('be.visible')
-      .should('contain', 'Get Started').click();
-
-      // Verify that the new location is "/get-in-touch/""
-      cy.location().should((loc) => {
-          expect(loc.pathname).to.eq('/get-in-touch/')
-          });
-      
-      // Verify the presence of "contact Us" button
-      cy.get('button[type=submit]').as('contactUs');
-      cy.get('@contactUs')
-        .should('be.visible')
-        .should('contain', 'Contact Us');
-  })
-})
+      .should('contain', 'Get Started')
+      .click();
+    // Verify that the new location is "/get-in-touch/""
+    cy.location().should((loc) => {
+      expect(loc.pathname).to.eq('/get-in-touch/');
+    });
+    // Verify the presence of "contact Us" button
+    cy.get('button[type=submit]').as('contactUs');
+    cy.get('@contactUs').should('be.visible').should('contain', 'Contact Us');
+  });
+});
